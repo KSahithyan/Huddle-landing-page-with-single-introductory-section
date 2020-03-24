@@ -19,6 +19,7 @@ body {
     background-image: url('./images/bg-desktop.svg');
     margin: 0;
     background-repeat: no-repeat;
+    background-size: cover;
 
     @include mobile {
         background-image: url('./images/bg-mobile.svg');
@@ -83,7 +84,7 @@ p {
     background-color: white;
     font-family: 'Open Sans';
     font-size: 1rem;
-    padding: 16px 50px;
+    padding: 14px 50px;
     font-weight: 400;
     margin: 20px auto;
     border-radius: 44px;
@@ -110,12 +111,12 @@ p {
 
 .left {
     // width: 50%;
-    max-width: 600px;
+    max-width: 540px;
 }
 
 .right {
     max-width: 500px;
-    width: 60%;
+    width: 65%;
     margin-left: 80px;
 
     @include mobile {
@@ -132,6 +133,8 @@ p {
     justify-content: center;
     
     @include desktop {
+        margin-right: 20px;
+        max-width: 80px;
         position: absolute;
         right: 0;
         bottom: 0;
@@ -140,7 +143,6 @@ p {
 
     .share-icon-container {
         padding: 4px;
-        margin: 10px;
         
         .icon {
             width: 28px;
